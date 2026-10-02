@@ -1,0 +1,15 @@
+const char STYLES_CSS[] PROGMEM = R"rawliteral(
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#111827}
+.bg{background:#f3f4f6}.wrap{min-height:100%;display:grid;place-items:center;padding:24px}
+.card{width:min(560px,96vw);background:#fff;padding:28px 28px 18px;border-radius:22px;box-shadow:0 10px 25px rgba(0,0,0,.08);border:1px solid rgba(0,0,0,.05)}
+.card__head{text-align:center;margin-bottom:12px}.title{font-size:24px;font-weight:700;margin:0 0 4px}.subtitle{font-size:18px;font-weight:600;margin:12px 0 6px;text-align:center}
+.muted{color:#6b7280;margin:0}.tiny{color:#6b7280;font-size:12px;margin:6px 0 0;text-align:center}.micro{color:#9ca3af;font-size:11px;margin:4px 0 0;text-align:center}
+.reading{background:#f9fafb;padding:20px;border-radius:14px;text-align:center}.distance{font-size:56px;font-weight:800;letter-spacing:-.5px;margin:6px 0;color:#1f2937}.distance .unit{font-size:26px;font-weight:700;color:#374151}
+.badge{display:inline-block;padding:8px 14px;border-radius:999px;font-weight:700;color:#fff;transition:background-color .25s}.badge--gray{background:#9ca3af}.badge--green{background:#10b981}.badge--orange{background:#f59e0b}.badge--red{background:#ef4444}
+.sep{border:0;height:1px;background:rgba(0,0,0,.08);margin:16px 0 18px}
+.control{margin:14px 0 18px}.row{display:flex;align-items:center;justify-content:space-between;color:#4b5563;font-weight:600}.value{color:#2563eb;font-weight:800}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:8px;border-radius:6px;background:#e5e7eb;outline:none;opacity:.96;transition:opacity .2s,background-color .2s}
+input[type=range]:hover{opacity:1}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:18px;height:18px;border-radius:999px;background:#3b82f6;box-shadow:0 1px 2px rgba(0,0,0,.15);cursor:pointer}
+input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:999px;background:#3b82f6;box-shadow:0 1px 2px rgba(0,0,0,.15);cursor:pointer}
+)rawliteral";
