@@ -1,4 +1,5 @@
-const WEBSOCKET_URL = `ws://${window.location.hostname}:81/`; // porta 81
+const WS_PROTOCOL = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+const WEBSOCKET_URL = `${WS_PROTOCOL}//${window.location.hostname}:81/`;
 
 const connectionStatusEl = document.getElementById('connection-status');
 const distanceValueEl = document.getElementById('distance-value');
